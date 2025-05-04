@@ -1,0 +1,57 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9f7ef;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+ul li::before {
+  content: "🌳 ";
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+h2.card-title {
+  font-size: 1.5rem;
+}
+
+header {
+  background: linear-gradient(135deg, #dcedc8, #a5d6a7);
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.visually-hidden-focusable {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.visually-hidden-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1em;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers images */
+  border: none; /* Removes any borders */
+}
